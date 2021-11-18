@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" Content="the Hub Web Studio">
+    <meta name="copyright" Content=""the Hub" ICA">
+    <meta name="description" Content="Первый ежегодный городской Game Jam в Казахстане от Satbayev University и the Hub ICA">
+    <meta name="keywords" Content ="алматы, almaty, game jam, гейм джем, игра, иры, университет, разработка игр, конкурс, прибыль, хакатон, hackathon, satbayev university, su, сатбаев, сатпаев, компьютеры, пк, ноутбуки, 2д, 3д, юнити, хаб, зе хаб, thehub, the hub, ретро, инди, издатели, издательство, грант, обучение, развитие, hub, 3d, 2d, art, development, indie, fun, веселье, приз">
+    <link rel="shortcut icon" href="./img/gamej2.png" type="image/x-icon">
+    <meta name="Publisher-Email" Content="bighub.info@gmail.com">
+    <meta name="robots" content="Index,follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Italianno&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400;500;600;700&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid|Mr+Dafoe|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Game Jam SU & theHub</title>
+</head>
+<body> 
+    <div class="container">
+        
+        <div class="pixel_screen" id="pixel_screen">
+        
+            <div class="background_galaxy">
+            
+                <div class="back_planet"><img src="./img/background/JUPITER1.png" alt="jupiter" class="back_jupiter"></div>
+                <div class="back_hills_grid">
+                    <div class="back_grid"></div>
+                    <div class="background_hills">
+                        <img src="./img/background/HillsPNG.png" alt="" class="back_hills">
+                    </div>
+                </div>
+                <div class="background_text_img">
+                    <img src="./img/background/logobk.png" alt="" class="back_logo">
+                    <div class="back_text">
+                        <div class="back_jam_week">
+                            <img src="./img/background/Jam.png" alt="Jam logo" class="jam">
+                            <p class="week">week</p>
+                        </div>
+                        <div class="satbayev_university">
+                            <p class="satbayev">Satbayev</p>
+                            <p class="university">University</p>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+                
+            <div class="shortcut_about shortcut_icons" id="about_sh">
+                <img src="./img/computer.png" alt="about"  class="shortcut_img">
+                <p class="shortcut_names">About G.J.</p>
+            </div>
+            <div class="shortcut_faq shortcut_icons" id="faq_sh">
+                <img src="./img/faq.png" alt="faq"  class="shortcut_img">
+                <p class="shortcut_names">FAQ</p>
+            </div>
+            <div class="shortcut_rules shortcut_icons" id="rules_sh">
+                <img src="./img/registe2r.png" alt="rules"  class="shortcut_img">
+                <p class="shortcut_names">Rules</p>
+            </div>
+            <div class="shortcut_schedule shortcut_icons" id="schedule_sh">
+                <img src="./img/schedule.png" alt="schedule"  class="shortcut_img">
+                <p class="shortcut_names">Schedule</p>
+            </div>
+            <div class="shortcut_reg shortcut_icons" id="reg_sh">
+                <img src="./img/register.png" alt="registration"  class="shortcut_img">
+                <p class="shortcut_names">Registration</p>
+            </div>
+            <div class="shortcut_awards shortcut_icons" id="awards_sh">
+                <img src="./img/awards.png" alt="awards"  class="shortcut_img">
+                <p class="shortcut_names">Awards</p>
+            </div>
+                
+            <div class="desktop_win_about desktop_wins" >
+                <div class="win_header" id="move_about">
+                    <div class="win_icon_text">
+                        <img src="./img/computer.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/about/game.jam</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_about">
+                        <img src="./img/max.png" alt="maximize window" class="max_windows_about">
+                        <img src="./img/close.png" alt="close window" class="close_windows_about">
+                    </div>
+                </div>
+                
+                <div class="win_content" id="about_content">
+                    <p class="win_content_text">
+                        Retro game Jam from Satbayev University and the Hub community is a three-day competition and exhibition from independent game developers from all over the city of Almaty, dedicated to creating games!
+                        The event will be held offline, and works are accepted only from those who participated in the official site.
+                        GameJam will take place in team mode, so come with friends or find a team right on the jam!
+                    </p>
+                    <ul class="win_content_list">
+                        What is awaiting you:
+                        <li><span> Free participation</span></li>
+                        <li><span>Help from specialists</span></li>
+                        <li><span> Useful workshops and lectures from professionals</span></li>
+                        <li><span>30 hours for development </span></li>
+                        <li><span>6 Nominations to Win</span></li>
+                        <li><span>Interesting dating</span></li>
+                        <li><span>Show your game to the public</span></li>
+                        <li><span> Interesting prizes</span> </li>
+                    </ul>
+                    <p class="win_content_text">
+                        Also, everything that will make these 3 days unforgettable! New friends, community support, crazy ideas, incredible boost to your skills,
+                        last minute upload and playthrough from many other developers from Almaty!
+                        The goal of our GameJam is to build a strong community of game developers in our country! See you soon.
+                    </p>
+                </div>
+                <div class="win_footer" id="about_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_faq desktop_wins">
+                <div class="win_header" id="move_faq">
+                    <div class="win_icon_text">
+                        <img src="./img/computer.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/faq</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_faq">
+                        <img src="./img/max.png" alt="maximize window" class="max_windows_faq">
+                        <img src="./img/close.png" alt="close window" class="close_windows_faq">
+                    </div>
+                </div>
+                <div class="win_content" id="faq_content">
+                    <p class="win_content_text text_question" id="question_1">
+                        <span class="show_text_question">+</span>
+                        What should I do if I don't have a team?
+                    </p>
+                    <p class="win_content_text text_answer"  id="question_1_answer">
+                        <span class="show_text_answer">-</span>
+                        You can apply to participate alone,
+                        either assemble a team on site, or join already existing teams before the start of development.
+                        However, if you fail to find the command,
+                        you will not be able to take part in the competition, but you will be able to take part in lectures and workshops.
+                    </p>
+                    <p class="win_content_text text_question" id="question_2">
+                        <span class="show_text_question">+</span>
+                        Our team has no experience at all, what should we do?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_2_answer">
+                        <span class="show_text_answer">-</span>
+                        GameJam is a great way to get the first experience, after all, everything happens for the first time!
+                    </p>
+                    <p class="win_content_text text_question" id="question_3">
+                        <span class="show_text_question">+</span>
+                        Can we use Unity3D/RPG Maker/Game Maker or any other game engine in our project development?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_3_answer">
+                        <span class="show_text_answer">-</span>
+                        Yes, you can use any game engine as long as the final project is
+                             available on the platforms specified in the GameJam rules.
+                    </p>
+                    <p class="win_content_text text_question" id="question_4">
+                        <span class="show_text_question">+</span>
+                        Does the project have to correspond to the "Retro" theme?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_4_answer">
+                        <span class="show_text_answer">-</span>
+                        Yes. This is a necessary limitation to encourage your creativity.
+                    </p>
+                    <p class="win_content_text text_question" id="question_5">
+                        <span class="show_text_question">+</span>
+                        Do we need to bring our own equipment (Laptops, tablets, etc.)?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_5_answer">
+                        <span class="show_text_answer">-</span>
+                        Yes, you need to come to Game Jam with your own equipment.
+                    </p>
+                </div>
+                <div class="win_footer" id="faq_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_rules desktop_wins" >
+                <div class="win_header" id="move_rules">
+                    <div class="win_icon_text">
+                        <img src="./img/computer.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/rules</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_rules">
+                        <img src="./img/max.png" alt="maximize window" class="max_windows_rules">
+                        <img src="./img/close.png" alt="close window" class="close_windows_rules">
+                    </div>
+                </div>
+                <div class="win_content" id="rules_content">
+                    <ul class="win_content_list">
+                        <li> <span>The project must correspond to the theme of the Game Jam, in this case - "Retro".
+                            However, the interpretation of the topic remains with the participants. </span> </li>
+                       <li> <span> Development time - 48 hours  </span></li>
+                       <li> <span> PC development platform (Windows / Linux / MacOs systems) or Web. </span> </li>
+                       <li> <span> Mandatory attendance at registration and closing of the event. </span> </li>
+                       <li> <span> Teams from 2 to 5 people can participate. </span> </li>
+                       <li> <span> Templates or previously created prototypes are allowed if they have been created by contributors. </span> </li>
+                       <li> <span> The share of third-party assets developed by non-contributors should not exceed 30% </span> </li>
+                       <li> <span> Any development technologies are allowed. </span> </li>
+                       <li> <span> Games should be based on a theme, and there should also be things in the project that refer to 3 of the 6 set additional themes (themes are opened immediately before the start of the jam) </span> </li>
+                       <li> <span> All publicly available libraries and middleware are allowed </span> </li>
+                       <li> <span> All content creation and developer utilities allowed (3dsmax, Photoshop, Blender, etc.) </span> </li>
+                       <li> <span> Source code must be attached to the game </span> </li>
+                       <li> <span> Infringement of intellectual property and copyright in participants' projects is strictly prohibited and may result in disqualification,
+                           all assets used by non-contributors must be free for non-commercial use
+                           or you must have written permission to use them! </span> </li>
+                       <li> <span> Team interaction is unlimited. </span> </li>
+                    </ul>  
+                </div>
+                <div class="win_footer" id="rules_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="desktop_win_schedule desktop_wins">
+                <div class="win_header" id="move_schedule">
+                    <div class="win_icon_text">
+                        <img src="./img/schedule.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/schedule</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_schedule">
+                        <img src="./img/max.png" alt="maximize window" class="max_windows_schedule">
+                        <img src="./img/close.png" alt="close window" class="close_windows_schedule">
+                    </div>
+                </div>
+                <div class="win_content" id="schedule_content">
+                    <p class="win_content_text text_date" id="date_1">
+                        <span class="show_text_date">+</span>
+                        December 3rd
+                    </p>
+                    <table class="date_table show_date_table show_date_table_on"  id="date_1_table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Plan</th>
+                        </tr>
+                        <tr>
+                            <td>10:30-11:00</td>
+                            <td>Gathering of participants of "SU Game Jam 2021"</td>
+                        </tr>
+                        <tr>
+                            <td>11:00-11:02</td>
+                            <td>Opening ceremony, performance of the speakers</td>
+
+                        </tr>
+                        <tr>
+                            <td>11:04-11:14</td> 
+                            <td>Greeting of the Rector of the NAO "KazNITU named after K.Satpayev" - Begentayev M.M</td>
+                        </tr>
+                        <tr>  
+                            <td>11:14-11:24</td>
+                            <td>Greeting of the director of IAIT - Uskenbayeva R.K.</td>
+                        </tr>
+                        <tr>
+                            <td>11:24-11:25</td> 
+                            <td>Greetings from sponsors</td>
+                        </tr>
+                        <tr> 
+                            <td>11:25-11:50</td>
+                            <td>Presentation of "SU Game Jam 2021". Presentation of the opening program</td>
+                        </tr>
+                        <tr>
+                            <td>11:50-11:52</td>
+                            <td>Job announcement on the website</td>
+                        </tr>
+                        <tr>
+                            <td>During the day</td>
+                            <td>Team building, mentors' work.</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-14:00</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr> 
+                            <td>17:00-18:00</td>
+                            <td>Check-up with mentors</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_date" id="date_2">
+                        <span class="show_text_date">+</span>
+                        December 4th
+                    </p>
+                    <table class="show_date_table date_table" id="date_2_table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Plan</th>
+                        </tr>
+                        <tr>
+                            <td>During the day</td>
+                            <td>Working on projects</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>Check-up with mentors</td>
+                        </tr>
+                        <tr>
+                            <td>14.00-18:30</td> 
+                            <td>Master classes from speakers</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_question" id="date_3">
+                        <span class="show_text_question">+</span>
+                        December 5th
+                    </p>
+                    <table class="date_table show_date_table" id="date_3_table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Plan</th>
+                        </tr>
+                        <tr>
+                            <td>09:00 - 12:00</td>
+                            <td>Acceptance of "SU Game Jam" projects until 12:00 p.m. 05.12.2021</td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td>Cultural and mass part: A film screening for all participants of "SU Game Jam 2021".</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 18:00</td> 
+                            <td>The work of the jury.</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_question" id="date_4">
+                        <span class="show_text_question">+</span>
+                        December 6th
+                    </p>
+                    <table class="date_table show_date_table" id="date_4_table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Plan</th>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 13:00</td>
+                            <td>The award ceremony of the winners of "SU Game Jam 2021".</td>
+                        </tr>
+              
+                    </table>
+                </div>
+                <div class="win_footer" id="schedule_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_registration desktop_wins">
+                <div class="win_header" id="move_reg">
+                    <div class="win_icon_text">
+                        <img src="./img/schedule.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/registration</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_reg">
+                        <img src="./img/close.png" alt="close window" class="close_windows_reg">
+                    </div>
+                </div>
+                <div class="win_content win_form_content" id="reg_content">
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none; width:1px; height: 1px" onload="if(submitted) {window.location='https://gameJam.su';}"></iframe>
+                    <p class="win_reg_text">Write information about the team:</p>
+                    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeEtLzuWkId12LwXSVII8q5Ndnt4l8z_Vo2k0i4PRylmQgVwg/formResponse" method="post" class="win_reg_form" target="hidden_iframe" onsubmit="submitted=true;">
+                        <span class="win_form_inform"><p class="win_inform_p">Team's name*:</p><input type="text" name="entry.622377088" required class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">E-mail*:</p><input type="email" name="entry.1842236906" id="email" required class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Phone number*:</p><input type="tel" name="entry.1419582377" id="num" required class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">First participant's name:*:</p><input type="text" name="entry.1601897725" id="teammate1" required class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Second participant's name:*:</p><input type="text" name="entry.1688673403"id="teammate2" class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Third participant's name::</p><input type="text" name="entry.1712183872" id="teammate3" class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Fourth participant's name::</p><input type="text" name="entry.752129752" id="teammate4" class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Fifth participant's name::</p><input type="text" name="entry.1555555961" id="teammate5"class="win_reg_input"></span>
+                        <span class="win_form_inform"><p class="win_inform_p">Educational institution:</p><input type="text" name="entry.966331574" id="edu_place"class="win_reg_input"></span>
+                        <div class="win_form_footer">
+                            <input type="submit" value="ОК" class="win_form_btn">
+                            <input type="reset" value="Cancel" class="win_form_btn">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="desktop_win_awards desktop_wins">
+                <div class="win_header" id="move_awards">
+                    <div class="win_icon_text">
+                        <img src="./img/computer.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/awards</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="./img/min.png" alt="minimize window" class="min_windows_awards">
+                        <img src="./img/max.png" alt="maximize window" class="max_windows_awards">
+                        <img src="./img/close.png" alt="close window" class="close_windows_awards">
+                    </div>
+                </div>
+                <div class="win_content" id="awards_content">
+                    <p class="win_content_text">
+                        At the end of the jam, the competition committee will select the 3 best projects!  
+                    </p>
+                    <ul class="win_content_list">
+                        And also, you have the opportunity to win in 4 additional nominations:
+                        <li><span>Innovation</span></li>
+                        <li><span>Design</span>  </li>
+                        <li><span>Script</span></li>
+                        <li><span>Best Junior Team</span> </li>
+                    </ul>
+                    <p class="win_content_text">
+                        The prize for winning in any of the nominations is 100,000 tenge and gifts from sponsors.
+                        At the same time, one project can become a winner in many nominations at once!
+                    </p>
+                </div>
+                <div class="win_footer" id="awards_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <header class="header">
+                <div class="header_wrapper">
+                    <div class="menu_panel">
+                        <div class="windows">
+                            <div class="win_btn general_win">
+                                <img src="./img/win95start.png" alt="win59">
+                                <p>Start</p>
+                            </div>
+                            <div class="win_about general_win">
+                                <img src="./img/computer.png" alt="computer">
+                                <p>About G.J.</p>
+                            </div>
+                            <div class="win_faq  general_win">
+                                <img src="./img/faq.png" alt="faq">
+                                <p>FAQ</p>
+                            </div>
+                            <div class="win_rules  general_win">
+                                <img src="./img/registe2r.png" alt="rules">
+                                <p>Rules</p>
+                            </div>
+                            <div class="win_schedule  general_win">
+                                <img src="./img/schedule.png" alt="schedule">
+                                <p>Schedule</p>
+                            </div>
+                            <div class="win_reg  general_win">
+                                <img src="./img/register.png" alt="registration">
+                                <p>Registration</p>
+                            </div>
+                            <div class="win_awards  general_win">
+                                <img src="./img/awards.png" alt="awards">
+                                <p>Awards</p>
+                            </div>
+
+                        </div>
+                       <div class="time_and_lang">
+                            <div class="lang">
+                                <img src="./img/rus.png" alt="rus" class="ch_lang" title="Russian">
+                            </div>
+                            <div class="cloak">
+                                <div class="time"></div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="menu_windows">
+                <div class="menu_windows_wrapper">
+                    <div class="name_line">
+                        <p>Dev.HUB</p>
+                    </div>
+                    <div class="prog_list">
+                        <ul class="prog_list_sections">
+                            <li class="about" id="about"><img src="./img/computer.png" alt="computer" class="prog_list_icons"><p>About G.J.</p></li>
+                            <li class="faq" id="faq"><img src="./img/faq.png" alt="faq" class="prog_list_icons"><p>FAQ</p></li>
+                            <li class="rules" id="rules"><img src="./img/registe2r.png" alt="rules" class="prog_list_icons"><p>Rules</p></li>
+                            <li class="schedule" id="schedule"><img src="./img/schedule.png" alt="schedule" class="prog_list_icons"><p>Schedule</p></li>
+                            <li class="registration" id="reg"><img src="./img/register.png" alt="registration" class="prog_list_icons"><p>Registration</p></li>
+                            <li class="awards" id="awards"><img src="./img/awards.png" alt="awards" class="prog_list_icons"><p>Awards</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lang_panel">
+                <div class="lang_panel_wrapper">
+                    <a href="./index_kaz.html"><img src="./img/kaz.png" alt="Kaz" class="langs" title="KZT"></a>
+                    <a href=""><img src="./img/rus.png" alt="Rus" class="langs" title="RUS"></a>
+                    <a href="./index_eng.html"><img src="./img/eng.png" alt="Eng" class="langs" title="ENG"></a>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+    <div class="loader" id="page_prelodaer">
+        <div class="loader_wrapper">
+            <div class="load_pseudo_icon">
+                <p>MyHubSoft</p>
+            </div>
+           <div class="load_text_content">
+               <img src="./img/windows95.png" alt="win 95" class="win_95_ico">
+               <div class="load_text">
+                   <p>Satbayev</p>
+                   <h1>Windows <span>95</span></h1>
+                   <h3>Game Jam Week</h3>
+               </div>
+           </div>
+           <div class="load_animation_content">
+               <div class="load_bar">
+                   <div class="loading_left loading_line">
+                   </div>
+                   <div class="loading_right loading_line"></div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/object_move.js"></script>
+    <script src="./js/mobile_obj_move.js"></script>
+   </body>
+</html>
