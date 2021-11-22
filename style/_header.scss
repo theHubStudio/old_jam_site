@@ -152,7 +152,7 @@
     right: 0;
     left: 0;
     width: 170px;
-    height: 265px;
+    height: 316px;
     border-width: 2px;
     border-style: solid;
     border-color: $wt $bk $bk $wt;
@@ -164,7 +164,7 @@
         justify-content: space-between;
         .name_line{
             width: 35px;
-            height: 265px;
+            height: 314px;
             background-color: rgb(186,11,11);
             background: linear-gradient(135deg, rgba(133,7,7,1) 14%, rgba(149,13,13,1) 29%, rgba(213,11,11,1) 90%);
             text-align:start;
@@ -211,6 +211,38 @@
 
             }
     
+        }
+        .sponsor_prog_list{
+            z-index: 1;
+            position: fixed;
+            width: 134px;
+            left: 43px;
+            height: 322px;
+            background-color: $win;
+            display: none;
+            .prog_list_sections{
+                .sponsor_links{
+                    text-decoration: none;
+                    display: flex;
+                    width: 100%;
+                    .prog_list_icons{
+
+                    }
+                }
+                .back_arrow{
+                 user-select: none;
+                 margin-top: 190px;
+                    img{
+                        transform: rotate(90deg);
+                    }
+                }
+                .back_arrow:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+        }
+        .sponsor_prog_list_on{
+            display: block;
         }
 
     }
@@ -483,6 +515,19 @@
             }
         }
     }
+    .lang_panel{
+        
+        .lang_panel_wrapper{
+            
+            .langs{
+                margin: 6px 0;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+    }
+    
 }
 
 

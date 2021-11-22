@@ -48,7 +48,7 @@ ul, ol, li {
 }
 
 .loader {
-  background-image: url(../img/win59clouds.jpg);
+  background-image: url(../img/win59clouds.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
@@ -482,7 +482,7 @@ ul, ol, li {
   right: 0;
   left: 0;
   width: 170px;
-  height: 265px;
+  height: 316px;
   border-width: 2px;
   border-style: solid;
   border-color: #fff #000 #000 #fff;
@@ -500,7 +500,7 @@ ul, ol, li {
 }
 .menu_windows .menu_windows_wrapper .name_line {
   width: 35px;
-  height: 265px;
+  height: 314px;
   background-color: #ba0b0b;
   background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
   text-align: start;
@@ -549,6 +549,39 @@ ul, ol, li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list {
+  z-index: 1;
+  position: fixed;
+  width: 134px;
+  left: 43px;
+  height: 322px;
+  background-color: #bdbebd;
+  display: none;
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .sponsor_links {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 190px;
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.menu_windows .menu_windows_wrapper .sponsor_prog_list_on {
+  display: block;
 }
 
 .menu_windows_on {
@@ -737,6 +770,12 @@ ul, ol, li {
   }
   .header .header_wrapper .menu_panel .time_and_lang .cloak {
     display: none;
+  }
+
+  .lang_panel .lang_panel_wrapper .langs {
+    margin: 6px 0;
+    width: 25px;
+    height: 25px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1053,7 +1092,7 @@ ul, ol, li {
 .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
   display: block;
   padding: 2px;
-  width: 250px;
+  width: 220px;
 }
 .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
   text-align: right;
@@ -1072,6 +1111,93 @@ ul, ol, li {
   border-width: 2px;
   border-style: solid;
   border-color: #000 #fff #fff #000;
+}
+
+.form_info_win {
+  background-color: #bdbebd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  width: 350px;
+  height: 196px;
+  padding: 3px;
+  position: fixed;
+  top: 130px;
+  left: 350px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+.form_info_win .form_info_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #06157f;
+  padding: 3px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+  height: 20px;
+}
+.form_info_win .form_info_header .info_icon_text {
+  font-family: "VT323", monospace;
+  color: #fff;
+  font-size: 18px;
+}
+.form_info_win .form_info_header .close_windows_info {
+  cursor: pointer;
+}
+.form_info_win .form_info_content {
+  padding: 10px;
+}
+.form_info_win .form_info_content .text_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.form_info_win .form_info_content .text_content .info_img {
+  width: 50px;
+  height: 50px;
+}
+.form_info_win .form_info_content .text_content p {
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+}
+.form_info_win .form_info_content .submit_content {
+  margin-left: 216px;
+  margin-top: 55px;
+  width: 80px;
+  padding: 4px;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background: #c4c1c1;
+  border-color: #fff #000 #000 #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form_info_win .form_info_content .submit_content:active {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+
+.form_info_win_on{
+    display: block;
 }
 
 .desktop_win_faq {

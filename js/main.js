@@ -7,10 +7,10 @@ function SetCurTime() {
     curDate = new Date();
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
+            CurTime.textContent = `${curDate.getHours()-12}:${curDate.getMinutes()} PM`;
         }
         else{
-            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
+            CurTime.textContent = `${curDate.getHours()-12}:0${curDate.getMinutes()} PM`;
         }
     }
     else{
@@ -39,6 +39,7 @@ let RulesIcon = document.getElementById('rules');
 let ScheduleIcon = document.getElementById('schedule');
 let RegIcon = document.getElementById('reg');
 let AwardsIcon = document.getElementById('awards');
+let SponsorIcon = document.getElementById('sponsor');
 
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
@@ -72,6 +73,7 @@ WinAwards.addEventListener('click', ()=>{
     WinAwards.classList.toggle('win_hide');
     AwardsWindows.classList.toggle('desktop_win_awards_on');
 })
+
 
 // values of desktop action
 let AboutWindows = document.querySelector('.desktop_win_about');
@@ -123,6 +125,16 @@ AwardsIcon.addEventListener('click',()=>{
     WinAwards.classList.add('win_awards_on');
     WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
+});
+let SponsorList = document.querySelector('.sponsor_prog_list');
+let ArrowBackIcon = document.getElementById('back');
+SponsorIcon.addEventListener('click',()=>{
+    SponsorList.classList.add('sponsor_prog_list_on');
+   
+});
+ArrowBackIcon.addEventListener('click', ()=>{
+    SponsorList.classList.remove('sponsor_prog_list_on');
+
 });
 
 
@@ -275,7 +287,7 @@ let MaxAboutContent = document.getElementById('about_content');
 let MaxAboutHeader = document.getElementById('move_about');
 MaxAbout.addEventListener('click', () => {
     if (aboutmax) {
-        AboutWindows.style.width = '400px';
+        AboutWindows.style.width = '360px';
         AboutWindows.style.height = '360px';
         AboutWindows.style.left = '5%';
         AboutWindows.style.top = '5%';
@@ -289,7 +301,7 @@ MaxAbout.addEventListener('click', () => {
         AboutWindows.style.left = '0px';
         AboutWindows.style.top = '0px';
         MaxAboutContent.style.width = 'auto';
-        MaxAboutContent.style.height = '100%';
+        MaxAboutContent.style.height = '90%';
         MaxAboutHeader.id = 'nomove';
         aboutmax = true;
     }
@@ -300,7 +312,7 @@ let MaxFAQContent = document.getElementById('faq_content');
 let MaxFAQHeader = document.getElementById('move_faq');
 MaxFAQ.addEventListener('click', () => {
     if (faqmax) {
-        FAQWindows.style.width = '400px';
+        FAQWindows.style.width = '360px';
         FAQWindows.style.height = '360px';
         FAQWindows.style.left = '5%';
         FAQWindows.style.top = '10%';
@@ -314,7 +326,7 @@ MaxFAQ.addEventListener('click', () => {
         FAQWindows.style.left = '0px';
         FAQWindows.style.top = '0px';
         MaxFAQContent.style.width = 'auto';
-        MaxFAQContent.style.height = '100%';
+        MaxFAQContent.style.height = '90%';
         MaxFAQHeader.id = 'nomove';
         faqmax = true;
     }
@@ -325,7 +337,7 @@ let MaxRulesContent = document.getElementById('rules_content');
 let MaxRulesHeader = document.getElementById('move_rules');
 MaxRules.addEventListener('click', () => {
     if (rulesmax) {
-        RulesWindows.style.width = '400px';
+        RulesWindows.style.width = '360px';
         RulesWindows.style.height = '360px';
         RulesWindows.style.left = '5%';
         RulesWindows.style.top = '15%';
@@ -339,7 +351,7 @@ MaxRules.addEventListener('click', () => {
         RulesWindows.style.left = '0px';
         RulesWindows.style.top = '0px';
         MaxRulesContent.style.width = 'auto';
-        MaxRulesContent.style.height = '100%';
+        MaxRulesContent.style.height = '90%';
         MaxRulesHeader.id = 'nomove';
         rulesmax = true;
     }
@@ -350,11 +362,10 @@ let MaxScheduleContent = document.getElementById('schedule_content');
 let MaxScheduleHeader = document.getElementById('move_schedule');
 MaxSchedule.addEventListener('click', () => {
     if (schedulemax) {
-        ScheduleWindows.style.width = '400px';
+        ScheduleWindows.style.width = '360px';
         ScheduleWindows.style.height = '360px';
         ScheduleWindows.style.left = '5%';
         ScheduleWindows.style.top = '20%';
-        MaxScheduleContent.style.overflow = "scroll";
         MaxScheduleContent.style.width = '328px';
         MaxScheduleContent.style.height = '274px';
         MaxScheduleHeader.id = 'move_about';
@@ -365,9 +376,8 @@ MaxSchedule.addEventListener('click', () => {
         ScheduleWindows.style.height = '100%';
         ScheduleWindows.style.left = '0px';
         ScheduleWindows.style.top = '0px';
-        MaxScheduleContent.style.overflow = "scroll";
         MaxScheduleContent.style.width = 'auto';
-        MaxScheduleContent.style.height = '100%';
+        MaxScheduleContent.style.height = '90%';
         MaxScheduleHeader.id = 'nomove';
         schedulemax = true;
     }
@@ -378,7 +388,7 @@ let MaxAwardsContent = document.getElementById('awards_content');
 let MaxAwardsHeader = document.getElementById('move_awards');
 MaxAwards.addEventListener('click', () => {
     if (awardsmax) {
-        AwardsWindows.style.width = '400px';
+        AwardsWindows.style.width = '360px';
         AwardsWindows.style.height = '360px';
         AwardsWindows.style.left = '5%';
         AwardsWindows.style.top = '25%';
@@ -392,7 +402,7 @@ MaxAwards.addEventListener('click', () => {
         AwardsWindows.style.left = '0px';
         AwardsWindows.style.top = '0px';
         MaxAwardsContent.style.width = 'auto';
-        MaxAwardsContent.style.height = '100%';
+        MaxAwardsContent.style.height = '90%';
         MaxAwardsHeader.id = 'nomove';
         awardsmax = true;
     }
@@ -448,13 +458,31 @@ let dateThirdA = document.getElementById('date_3_table');
 dateThird.addEventListener('click', ()=>{
     dateThirdA.classList.toggle('show_date_table_on');
 });
+let dateFourth = document.getElementById('date_4');
+let dateFourthA = document.getElementById('date_4_table');
+dateFourth.addEventListener('click', ()=>{
+    dateFourthA.classList.toggle('show_date_table_on');
+});
+
 
 
 // language panel
 let Lang = document.querySelector('.lang');
 let LangPanel = document.querySelector('.lang_panel');
 
-Lang.addEventListener('click', ()=>{
-    
+Lang.addEventListener('click', () => {
     LangPanel.classList.toggle('lang_panel_on');
-})
+});
+
+//Form Info Panel
+let FormInfo = document.querySelector('.form_info_win');
+let FormInfoClose = document.querySelector('.close_windows_info');
+let FormInfoOk = document.querySelector('.submit_content');
+
+FormInfoClose.addEventListener('click', () => {
+    FormInfo.classList.remove('form_info_win_on');
+});
+
+FormInfoOk.addEventListener('click', () => {
+    FormInfo.classList.remove('form_info_win_on');
+});

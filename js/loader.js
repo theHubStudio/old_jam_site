@@ -6,5 +6,5 @@ document.body.onload = function(){
             loader.classList.add('off_loader');
             container.style.display = 'block';
         };
-    }, 9000);
+    }, 6000);
 };
