@@ -47,6 +47,7 @@ let WinRules = document.querySelector('.win_rules');
 let WinSchedule = document.querySelector('.win_schedule');
 let WinReg = document.querySelector('.win_reg');
 let WinAwards = document.querySelector('.win_awards');
+let WinSponsors = document.querySelector('.win_sponsors');
 
 // hide windows action
 WinAbout.addEventListener('click', ()=>{
@@ -73,6 +74,10 @@ WinAwards.addEventListener('click', ()=>{
     WinAwards.classList.toggle('win_hide');
     AwardsWindows.classList.toggle('desktop_win_awards_on');
 })
+WinSponsors.addEventListener('click', ()=>{
+    WinSponsors.classList.toggle('win_hide');
+    SponsorsWindows.classList.toggle('desktop_win_sponsors_on');
+})
 
 
 // values of desktop action
@@ -81,7 +86,8 @@ let FAQWindows = document.querySelector('.desktop_win_faq');
 let RulesWindows = document.querySelector('.desktop_win_rules');
 let ScheduleWindows = document.querySelector('.desktop_win_schedule');
 let RegWindows = document.querySelector('.desktop_win_registration');
-let AwardsWindows = document.querySelector('.desktop_win_awards')
+let AwardsWindows = document.querySelector('.desktop_win_awards');
+let SponsorsWindows = document.querySelector('.desktop_win_sponsors');
 
 
 AboutIcon.addEventListener('click',()=>{
@@ -146,6 +152,7 @@ let RulesShortcut = document.getElementById('rules_sh');
 let ScheduleShortcut = document.getElementById('schedule_sh');
 let RegShortcut = document.getElementById('reg_sh');
 let AwardsShortcut = document.getElementById('awards_sh');
+let SponsorShortcut = document.getElementById('sponsor_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
@@ -177,6 +184,12 @@ AwardsShortcut.addEventListener('dblclick',()=>{
     WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
 });
+SponsorShortcut.addEventListener('dblclick',()=>{
+    WinSponsors.classList.add('win_sponsors_on');
+    WinSponsors.classList.remove('win_hide');
+    SponsorsWindows.classList.add('desktop_win_sponsors_on');
+});
+
 AboutShortcut.addEventListener('mousedown', () => {
     AboutShortcut.style.border = '1px dashed grey';
 });
@@ -213,6 +226,12 @@ AwardsShortcut.addEventListener('mousedown', () => {
 AwardsShortcut.addEventListener('mouseleave', () => {
     AwardsShortcut.style.border = '';
 });
+SponsorShortcut.addEventListener('mousedown', () => {
+    SponsorShortcut.style.border = '1px dashed grey';
+});
+SponsorShortcut.addEventListener('mouseleave', () => {
+    SponsorShortcut.style.border = '';
+});
 
 
 // close windows
@@ -246,6 +265,11 @@ CloseAwards.addEventListener('click',()=>{
     AwardsWindows.classList.remove('desktop_win_awards_on');
     WinAwards.classList.remove('win_awards_on');
 });
+let CloseSponsors = document.querySelector('.close_windows_sponsors');
+CloseSponsors.addEventListener('click',()=>{
+    SponsorsWindows.classList.remove('desktop_win_sponsors_on');
+    WinSponsors.classList.remove('win_sponsors_on');
+});
 
 
 //minimize windows
@@ -278,6 +302,11 @@ let MinAwards = document.querySelector('.min_windows_awards');
 MinAwards.addEventListener('click',()=>{
     AwardsWindows.classList.remove('desktop_win_awards_on');
     WinAwards.classList.add('win_hide');
+});
+let MinSponsors = document.querySelector('.min_windows_sponsors');
+MinSponsors.addEventListener('click',()=>{
+    SponsorsWindows.classList.remove('desktop_win_sponsors_on');
+    WinSponsors.classList.add('win_hide');
 });
 
 //maximize windows
@@ -405,6 +434,31 @@ MaxAwards.addEventListener('click', () => {
         MaxAwardsContent.style.height = '90%';
         MaxAwardsHeader.id = 'nomove';
         awardsmax = true;
+    }
+});
+var sponsorsmax = false;
+let MaxSponsors = document.querySelector('.max_windows_sponsors');
+let MaxSponsorsContent = document.getElementById('sponsor_content');
+let MaxSponsorsHeader = document.getElementById('move_sponsor');
+MaxSponsors.addEventListener('click', () => {
+    if (sponsorsmax) {
+        SponsorsWindows.style.width = '360px';
+        SponsorsWindows.style.height = '360px';
+        SponsorsWindows.style.left = '5%';
+        SponsorsWindows.style.top = '25%';
+        MaxSponsorsContent.style.width = '328px';
+        MaxSponsorsContent.style.height = '274px';
+        MaxSponsorsHeader.id = 'move_about';
+        sponsorsmax = false;
+    } else {
+        SponsorsWindows.style.width = '100%';
+        SponsorsWindows.style.height = '100%';
+        SponsorsWindows.style.left = '0px';
+        SponsorsWindows.style.top = '0px';
+        MaxSponsorsContent.style.width = 'auto';
+        MaxSponsorsContent.style.height = '90%';
+        MaxSponsorsHeader.id = 'nomove';
+        sponsorsmax = true;
     }
 });
 

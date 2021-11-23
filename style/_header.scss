@@ -83,6 +83,9 @@
                 .win_awards{
                     display: none;
                 }
+                .win_sponsors{
+                    display: none;
+                }
                 .win_about_on{
                     display: flex;
                     border-color: $bk $wt $wt $bk;
@@ -104,6 +107,10 @@
                     display: flex;
                 }
                 .win_awards_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_sponsors_on{
                     border-color: $bk $wt $wt $bk;
                     display: flex;
                 }

@@ -16,13 +16,17 @@ let MoveWinReg = document.querySelector('.desktop_win_registration');
 
 let MoveAwards = document.getElementById('move_awards');
 let MoveWinAwards = document.querySelector('.desktop_win_awards');
+
+let MoveSponsor = document.getElementById('move_sponsor');
+let MoveWinSponsor = document.querySelector('.desktop_win_sponsors');
+
 DragWindows(MoveAbout, MoveWinAbout);
 DragWindows(MoveFAQ, MoveWinFAQ);
 DragWindows(MoveRules, MoveWinRules);
 DragWindows(MoveSchedule, MoveWinSchedule);
 DragWindows(MoveReg, MoveWinReg);
 DragWindows(MoveAwards, MoveWinAwards);
-
+DragWindows(MoveSponsor, MoveWinSponsor);
 
 function DragWindows(header, windows) {
     header.addEventListener('mousedown', () => {
@@ -121,12 +125,14 @@ let MoveRulesSh = document.getElementById('rules_sh');
 let MoveScheduleSh = document.getElementById('schedule_sh');
 let MoveRegSh = document.getElementById('reg_sh');
 let MoveAwardsSh = document.getElementById('awards_sh');
+let MoveSponsorsSh = document.getElementById('sponsor_sh');
 DragShortcutElem(MoveAboutSh);
 DragShortcutElem(MoveFAQSh);
 DragShortcutElem(MoveRulesSh);
 DragShortcutElem(MoveScheduleSh);
 DragShortcutElem(MoveRegSh);
 DragShortcutElem(MoveAwardsSh);
+DragShortcutElem(MoveSponsorsSh);
 
 function DragShortcutElem(elem){
     elem.ondragstart = () => false;

@@ -288,6 +288,8 @@ ul, ol, li {
         display: none; }
       .header .header_wrapper .menu_panel .windows .win_awards {
         display: none; }
+      .header .header_wrapper .menu_panel .windows .win_sponsors {
+        display: none; }
       .header .header_wrapper .menu_panel .windows .win_about_on {
         display: flex;
         border-color: #000 #fff #fff #000; }
@@ -304,6 +306,9 @@ ul, ol, li {
         border-color: #000 #fff #fff #000;
         display: flex; }
       .header .header_wrapper .menu_panel .windows .win_awards_on {
+        border-color: #000 #fff #fff #000;
+        display: flex; }
+      .header .header_wrapper .menu_panel .windows .win_sponsors_on {
         border-color: #000 #fff #fff #000;
         display: flex; }
       .header .header_wrapper .menu_panel .windows .win_hide {
@@ -609,6 +614,12 @@ ul, ol, li {
   right: 0;
   left: 0; }
 
+.shortcut_sponsors {
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 90px; }
+
 @media screen and (max-width: 720px) {
   .shortcut_icons {
     width: 80px;
@@ -743,6 +754,23 @@ ul, ol, li {
       display: none; }
     .desktop_wins .win_content .show_date_table_on {
       display: block; }
+  .desktop_wins .win_content_sponsors {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; }
+    .desktop_wins .win_content_sponsors .win_content_icons {
+      margin: 10px 15px;
+      width: 60px;
+      height: 60px;
+      text-align: center; }
+      .desktop_wins .win_content_sponsors .win_content_icons .win_content_links {
+        cursor: pointer;
+        color: #105056;
+        text-decoration: none; }
+        .desktop_wins .win_content_sponsors .win_content_icons .win_content_links .win_content_img {
+          width: 25px;
+          height: 25px; }
   .desktop_wins .win_footer {
     display: flex;
     justify-content: space-between; }
@@ -892,6 +920,9 @@ ul, ol, li {
   display: block; }
 
 .desktop_win_awards_on {
+  display: block; }
+
+.desktop_win_sponsors_on {
   display: block; }
 
 @media screen and (max-width: 1200px) {

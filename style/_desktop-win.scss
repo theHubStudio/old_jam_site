@@ -113,6 +113,32 @@
         }
         
     }
+    .win_content_sponsors{
+        background-color: #f1f1f1;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        align-content: flex-start;
+        .win_content_icons{
+            margin: 10px 15px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            .win_content_links{
+                cursor: pointer;
+                color: #105056;
+                text-decoration: none; 
+                
+                .win_content_img{
+                    width: 25px;
+                    height: 25px;
+                }
+
+            }
+
+            
+        }
+    }
    
     .win_footer{
         display: flex;
@@ -305,6 +331,9 @@
     display: block;
 }
 .desktop_win_awards_on{
+    display: block;
+} 
+.desktop_win_sponsors_on{
     display: block;
 } 
 
