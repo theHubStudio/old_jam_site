@@ -201,9 +201,10 @@
     width: 350px;
     height: 196px;
     padding: 3px;
-    position: fixed;
-    top: 130px;
-    left: 350px;
+    position: relative;
+    top: 200px;
+    // left: 600px;
+    margin: 0 auto;
     right: 0;
     bottom: 0;
     z-index: 2;
@@ -231,8 +232,6 @@
     .form_info_content{
         padding: 10px;
     
-       
-        
         .text_content{
            
             display: flex;
@@ -333,9 +332,9 @@
         top: 160px;
         left: 350px;        
     } 
-
-    
+   
 }
+
 
 @media screen and (max-width: 786px){
     .desktop_wins{
@@ -517,11 +516,21 @@
     
         }
         
+    } 
+
+}
+@media screen and (max-width: 480px){
+    .form_info_win{
+        width: 300px;
+        .form_info_content{
+            
+            .submit_content{
+                margin-left: 185px;
+            }
+            
+        }
+       
     }
-    
-    
-
-
 }
 
 @media screen and (max-width: 360px) and (min-width: 320px){
@@ -599,13 +608,8 @@
 
 }
 
-@media screen and (max-width: 360px) and (min-width: 320px){
+@media screen and (min-width: 320px){
     .desktop_wins{
-       
         left: 10px;
     }
-        
-        
-    
-
 }
