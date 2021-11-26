@@ -40,6 +40,7 @@ let ScheduleIcon = document.getElementById('schedule');
 let RegIcon = document.getElementById('reg');
 let AwardsIcon = document.getElementById('awards');
 let SponsorIcon = document.getElementById('sponsor');
+let SocialIcon = document.getElementById('social');
 
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
@@ -48,6 +49,7 @@ let WinSchedule = document.querySelector('.win_schedule');
 let WinReg = document.querySelector('.win_reg');
 let WinAwards = document.querySelector('.win_awards');
 let WinSponsors = document.querySelector('.win_sponsors');
+let WinSocial = document.querySelector('.win_social');
 
 // hide windows action
 WinAbout.addEventListener('click', ()=>{
@@ -78,6 +80,10 @@ WinSponsors.addEventListener('click', ()=>{
     WinSponsors.classList.toggle('win_hide');
     SponsorsWindows.classList.toggle('desktop_win_sponsors_on');
 })
+WinSocial.addEventListener('click', ()=>{
+    WinSocial.classList.toggle('win_hide');
+    SocialWindows.classList.toggle('desktop_win_social_on');
+})
 
 
 // values of desktop action
@@ -88,6 +94,7 @@ let ScheduleWindows = document.querySelector('.desktop_win_schedule');
 let RegWindows = document.querySelector('.desktop_win_registration');
 let AwardsWindows = document.querySelector('.desktop_win_awards');
 let SponsorsWindows = document.querySelector('.desktop_win_sponsors');
+let SocialWindows = document.querySelector('.desktop_win_social');
 
 
 AboutIcon.addEventListener('click',()=>{
@@ -132,6 +139,13 @@ AwardsIcon.addEventListener('click',()=>{
     WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
 });
+SocialIcon.addEventListener('click',()=>{
+    WinBtn.classList.remove('win_btn_clicked');
+    menuWindows.classList.remove('menu_windows_on');
+    WinSocial.classList.add('win_social_on');
+    WinSocial.classList.remove('win_hide');
+    SocialWindows.classList.add('desktop_win_social_on');
+});
 let SponsorList = document.querySelector('.sponsor_prog_list');
 let ArrowBackIcon = document.getElementById('back');
 SponsorIcon.addEventListener('click',()=>{
@@ -153,6 +167,7 @@ let ScheduleShortcut = document.getElementById('schedule_sh');
 let RegShortcut = document.getElementById('reg_sh');
 let AwardsShortcut = document.getElementById('awards_sh');
 let SponsorShortcut = document.getElementById('sponsor_sh');
+let SocialShortcut = document.getElementById('social_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
@@ -188,6 +203,11 @@ SponsorShortcut.addEventListener('dblclick',()=>{
     WinSponsors.classList.add('win_sponsors_on');
     WinSponsors.classList.remove('win_hide');
     SponsorsWindows.classList.add('desktop_win_sponsors_on');
+});
+SocialShortcut.addEventListener('dblclick',()=>{
+    WinSocial.classList.add('win_social_on');
+    WinSocial.classList.remove('win_hide');
+    SocialWindows.classList.add('desktop_win_social_on');
 });
 
 AboutShortcut.addEventListener('mousedown', () => {
@@ -232,6 +252,12 @@ SponsorShortcut.addEventListener('mousedown', () => {
 SponsorShortcut.addEventListener('mouseleave', () => {
     SponsorShortcut.style.border = '';
 });
+SocialShortcut.addEventListener('mousedown', () => {
+    SocialShortcut.style.border = '1px dashed grey';
+});
+SocialShortcut.addEventListener('mouseleave', () => {
+    SocialShortcut.style.border = '';
+});
 
 
 // close windows
@@ -270,6 +296,11 @@ CloseSponsors.addEventListener('click',()=>{
     SponsorsWindows.classList.remove('desktop_win_sponsors_on');
     WinSponsors.classList.remove('win_sponsors_on');
 });
+let CloseSocial = document.querySelector('.close_windows_social');
+CloseSocial.addEventListener('click',()=>{
+    SocialWindows.classList.remove('desktop_win_social_on');
+    WinSocial.classList.remove('win_social_on');
+});
 
 
 //minimize windows
@@ -307,6 +338,11 @@ let MinSponsors = document.querySelector('.min_windows_sponsors');
 MinSponsors.addEventListener('click',()=>{
     SponsorsWindows.classList.remove('desktop_win_sponsors_on');
     WinSponsors.classList.add('win_hide');
+});
+let MinSocial = document.querySelector('.min_windows_social');
+MinSocial.addEventListener('click',()=>{
+    SocialWindows.classList.remove('desktop_win_social_on');
+    WinSocial.classList.add('win_hide');
 });
 
 //maximize windows
@@ -459,6 +495,31 @@ MaxSponsors.addEventListener('click', () => {
         MaxSponsorsContent.style.height = '90%';
         MaxSponsorsHeader.id = 'nomove';
         sponsorsmax = true;
+    }
+});
+var socialmax = false;
+let MaxSocial = document.querySelector('.max_windows_social');
+let MaxSocialContent = document.getElementById('social_content');
+let MaxSocialHeader = document.getElementById('move_social');
+MaxSocial.addEventListener('click', () => {
+    if (socialmax) {
+        SocialWindows.style.width = '360px';
+        SocialWindows.style.height = '360px';
+        SocialWindows.style.left = '5%';
+        SocialWindows.style.top = '25%';
+        MaxSocialContent.style.width = '328px';
+        MaxSocialContent.style.height = '274px';
+        MaxSocialHeader.id = 'move_about';
+        socialmax = false;
+    } else {
+        SocialWindows.style.width = '100%';
+        SocialWindows.style.height = '100%';
+        SocialWindows.style.left = '0px';
+        SocialWindows.style.top = '0px';
+        MaxSocialContent.style.width = 'auto';
+        MaxSocialContent.style.height = '90%';
+        MaxSocialHeader.id = 'nomove';
+        socialmax = true;
     }
 });
 

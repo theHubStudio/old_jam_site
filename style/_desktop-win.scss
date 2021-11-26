@@ -113,7 +113,7 @@
         }
         
     }
-    .win_content_sponsors{
+    .win_content_sponsors_social{
         background-color: #f1f1f1;
         display: flex;
         flex-wrap: wrap;
@@ -121,8 +121,8 @@
         align-content: flex-start;
         .win_content_icons{
             margin: 10px 15px;
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             text-align: center;
             .win_content_links{
                 cursor: pointer;
@@ -130,8 +130,8 @@
                 text-decoration: none; 
                 
                 .win_content_img{
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                 }
 
             }
@@ -336,7 +336,9 @@
 .desktop_win_sponsors_on{
     display: block;
 } 
-
+.desktop_win_social_on{
+    display: block;
+} 
 
 // windows responsive
 @media screen and (max-width: 1200px){
