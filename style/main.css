@@ -291,6 +291,8 @@ ul, ol, li {
         display: none; }
       .header .header_wrapper .menu_panel .windows .win_sponsors {
         display: none; }
+        .header .header_wrapper .menu_panel .windows .win_sponsors p {
+          font-size: 16px; }
       .header .header_wrapper .menu_panel .windows .win_social {
         display: none; }
       .header .header_wrapper .menu_panel .windows .win_about_on {
