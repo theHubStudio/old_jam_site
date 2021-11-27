@@ -399,7 +399,7 @@ ul, ol, li {
       position: fixed;
       width: 134px;
       left: 43px;
-      height: 322px;
+      height: 360px;
       background-color: #bdbebd;
       display: none; }
       .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .sponsor_links {
@@ -408,7 +408,7 @@ ul, ol, li {
         width: 100%; }
       .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow {
         user-select: none;
-        margin-top: 190px; }
+        margin-top: 240px; }
         .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow img {
           transform: rotate(90deg); }
       .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow:hover {
