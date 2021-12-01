@@ -201,7 +201,7 @@
                 list-style-type: none;
                 li{
                     padding: 5px;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
@@ -248,7 +248,7 @@
                 }
                 .back_arrow{
                  user-select: none;
-                 margin-top: 240px;
+                 margin-top: 1em;
                     img{
                         transform: rotate(90deg);
                     }

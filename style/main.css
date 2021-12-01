@@ -380,7 +380,7 @@ ul, ol, li {
         list-style-type: none; }
         .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
           padding: 5px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
           display: flex;
           align-items: center;
           cursor: pointer; }
@@ -410,7 +410,7 @@ ul, ol, li {
         width: 100%; }
       .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow {
         user-select: none;
-        margin-top: 240px; }
+        margin-top: 1em; }
         .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow img {
           transform: rotate(90deg); }
       .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow:hover {
@@ -785,6 +785,9 @@ ul, ol, li {
         .desktop_wins .win_content_sponsors_social .win_content_icons .win_content_links .win_content_img {
           width: 30px;
           height: 30px; }
+        .desktop_wins .win_content_sponsors_social .win_content_icons .win_content_links .win_content_img_main_sponsor {
+          width: 40px;
+          height: 40px; }
   .desktop_wins .win_footer {
     display: flex;
     justify-content: space-between; }
