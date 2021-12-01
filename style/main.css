@@ -76,8 +76,7 @@ ul, ol, li {
       text-align: center; }
       .loader .loader_wrapper .load_text_content .win_95_ico {
         width: 380px;
-        height: 285px;
-        transform: rotate(18deg); }
+        height: 285px; }
       .loader .loader_wrapper .load_text_content .load_text {
         width: 470px;
         margin: 0 auto; }
