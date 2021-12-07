@@ -41,6 +41,7 @@ let RegIcon = document.getElementById('reg');
 let AwardsIcon = document.getElementById('awards');
 let SponsorIcon = document.getElementById('sponsor');
 let SocialIcon = document.getElementById('social');
+let GamesIcon = document.getElementById('games');
 
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
@@ -50,6 +51,7 @@ let WinReg = document.querySelector('.win_reg');
 let WinAwards = document.querySelector('.win_awards');
 let WinSponsors = document.querySelector('.win_sponsors');
 let WinSocial = document.querySelector('.win_social');
+let WinGames = document.querySelector('.win_games');
 
 // hide windows action
 WinAbout.addEventListener('click', ()=>{
@@ -84,6 +86,10 @@ WinSocial.addEventListener('click', ()=>{
     WinSocial.classList.toggle('win_hide');
     SocialWindows.classList.toggle('desktop_win_social_on');
 })
+WinGames.addEventListener('click', ()=>{
+    WinGames.classList.toggle('win_hide');
+    GamesWindows.classList.toggle('desktop_win_games_on');
+})
 
 
 // values of desktop action
@@ -95,6 +101,7 @@ let RegWindows = document.querySelector('.desktop_win_registration');
 let AwardsWindows = document.querySelector('.desktop_win_awards');
 let SponsorsWindows = document.querySelector('.desktop_win_sponsors');
 let SocialWindows = document.querySelector('.desktop_win_social');
+let GamesWindows = document.querySelector('.desktop_win_games');
 
 
 AboutIcon.addEventListener('click',()=>{
@@ -146,6 +153,14 @@ SocialIcon.addEventListener('click',()=>{
     WinSocial.classList.remove('win_hide');
     SocialWindows.classList.add('desktop_win_social_on');
 });
+GamesIcon.addEventListener('click',()=>{
+    WinBtn.classList.remove('win_btn_clicked');
+    menuWindows.classList.remove('menu_windows_on');
+    WinGames.classList.add('win_games_on');
+    WinGames.classList.remove('win_hide');
+    GamesWindows.classList.add('desktop_win_games_on');
+});
+
 let SponsorList = document.querySelector('.sponsor_prog_list');
 let ArrowBackIcon = document.getElementById('back');
 SponsorIcon.addEventListener('click',()=>{
@@ -168,6 +183,7 @@ let RegShortcut = document.getElementById('reg_sh');
 let AwardsShortcut = document.getElementById('awards_sh');
 let SponsorShortcut = document.getElementById('sponsor_sh');
 let SocialShortcut = document.getElementById('social_sh');
+let GamesShortcut = document.getElementById('games_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
@@ -208,6 +224,11 @@ SocialShortcut.addEventListener('dblclick',()=>{
     WinSocial.classList.add('win_social_on');
     WinSocial.classList.remove('win_hide');
     SocialWindows.classList.add('desktop_win_social_on');
+});
+GamesShortcut.addEventListener('dblclick',()=>{
+    WinGames.classList.add('win_games_on');
+    WinGames.classList.remove('win_hide');
+    GamesWindows.classList.add('desktop_win_games_on');
 });
 
 AboutShortcut.addEventListener('mousedown', () => {
@@ -258,6 +279,12 @@ SocialShortcut.addEventListener('mousedown', () => {
 SocialShortcut.addEventListener('mouseleave', () => {
     SocialShortcut.style.border = '';
 });
+GamesShortcut.addEventListener('mousedown', () => {
+    GamesShortcut.style.border = '1px dashed grey';
+});
+GamesShortcut.addEventListener('mouseleave', () => {
+    GamesShortcut.style.border = '';
+});
 
 
 // close windows
@@ -300,6 +327,11 @@ let CloseSocial = document.querySelector('.close_windows_social');
 CloseSocial.addEventListener('click',()=>{
     SocialWindows.classList.remove('desktop_win_social_on');
     WinSocial.classList.remove('win_social_on');
+});
+let CloseGames = document.querySelector('.close_windows_games');
+CloseGames.addEventListener('click',()=>{
+    GamesWindows.classList.remove('desktop_win_games_on');
+    WinGames.classList.remove('win_games_on');
 });
 
 
@@ -344,6 +376,11 @@ MinSocial.addEventListener('click',()=>{
     SocialWindows.classList.remove('desktop_win_social_on');
     WinSocial.classList.add('win_hide');
 });
+let MinGames = document.querySelector('.min_windows_games');
+MinGames.addEventListener('click',()=>{
+    GamesWindows.classList.remove('desktop_win_games_on');
+    WinGames.classList.add('win_hide');
+});
 
 //maximize windows
 var aboutmax = false;
@@ -383,7 +420,7 @@ MaxFAQ.addEventListener('click', () => {
         FAQWindows.style.top = '10%';
         MaxFAQContent.style.width = '328px';
         MaxFAQContent.style.height = '274px';
-        MaxFAQHeader.id = 'move_about';
+        MaxFAQHeader.id = 'move_faq';
         faqmax = false;
     } else {
         FAQWindows.style.width = '100%';
@@ -408,7 +445,7 @@ MaxRules.addEventListener('click', () => {
         RulesWindows.style.top = '15%';
         MaxRulesContent.style.width = '328px';
         MaxRulesContent.style.height = '274px';
-        MaxRulesHeader.id = 'move_about';
+        MaxRulesHeader.id = 'move_rules';
         rulesmax = false;
     } else {
         RulesWindows.style.width = '100%';
@@ -433,7 +470,7 @@ MaxSchedule.addEventListener('click', () => {
         ScheduleWindows.style.top = '20%';
         MaxScheduleContent.style.width = '328px';
         MaxScheduleContent.style.height = '274px';
-        MaxScheduleHeader.id = 'move_about';
+        MaxScheduleHeader.id = 'move_schedule';
         
         schedulemax = false;
     } else {
@@ -459,7 +496,7 @@ MaxAwards.addEventListener('click', () => {
         AwardsWindows.style.top = '25%';
         MaxAwardsContent.style.width = '328px';
         MaxAwardsContent.style.height = '274px';
-        MaxAwardsHeader.id = 'move_about';
+        MaxAwardsHeader.id = 'move_awards';
         awardsmax = false;
     } else {
         AwardsWindows.style.width = '100%';
@@ -484,7 +521,7 @@ MaxSponsors.addEventListener('click', () => {
         SponsorsWindows.style.top = '25%';
         MaxSponsorsContent.style.width = '328px';
         MaxSponsorsContent.style.height = '274px';
-        MaxSponsorsHeader.id = 'move_about';
+        MaxSponsorsHeader.id = 'move_sponsor';
         sponsorsmax = false;
     } else {
         SponsorsWindows.style.width = '100%';
@@ -509,7 +546,7 @@ MaxSocial.addEventListener('click', () => {
         SocialWindows.style.top = '25%';
         MaxSocialContent.style.width = '328px';
         MaxSocialContent.style.height = '274px';
-        MaxSocialHeader.id = 'move_about';
+        MaxSocialHeader.id = 'move_social';
         socialmax = false;
     } else {
         SocialWindows.style.width = '100%';
@@ -520,6 +557,31 @@ MaxSocial.addEventListener('click', () => {
         MaxSocialContent.style.height = '90%';
         MaxSocialHeader.id = 'nomove';
         socialmax = true;
+    }
+});
+var gamesmax = false;
+let MaxGames = document.querySelector('.max_windows_games');
+let MaxGamesContent = document.getElementById('games_content');
+let MaxGamesHeader = document.getElementById('move_games');
+MaxGames.addEventListener('click', () => {
+    if (gamesmax) {
+        GamesWindows.style.width = '360px';
+        GamesWindows.style.height = '360px';
+        GamesWindows.style.left = '5%';
+        GamesWindows.style.top = '25%';
+        MaxGamesContent.style.width = '328px';
+        MaxGamesContent.style.height = '274px';
+        MaxGamesHeader.id = 'move_games';
+        gamesmax = false;
+    } else {
+        GamesWindows.style.width = '100%';
+        GamesWindows.style.height = '100%';
+        GamesWindows.style.left = '0px';
+        GamesWindows.style.top = '0px';
+        MaxGamesContent.style.width = 'auto';
+        MaxGamesContent.style.height = '90%';
+        MaxGamesHeader.id = 'nomove';
+        gamesmax = true;
     }
 });
 

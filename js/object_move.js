@@ -23,6 +23,9 @@ let MoveWinSponsor = document.querySelector('.desktop_win_sponsors');
 let MoveSocial = document.getElementById('move_social');
 let MoveWinSocial = document.querySelector('.desktop_win_social');
 
+let MoveGames = document.getElementById('move_games');
+let MoveWinGames = document.querySelector('.desktop_win_games');
+
 DragWindows(MoveAbout, MoveWinAbout);
 DragWindows(MoveFAQ, MoveWinFAQ);
 DragWindows(MoveRules, MoveWinRules);
@@ -31,6 +34,7 @@ DragWindows(MoveReg, MoveWinReg);
 DragWindows(MoveAwards, MoveWinAwards);
 DragWindows(MoveSponsor, MoveWinSponsor);
 DragWindows(MoveSocial, MoveWinSocial);
+DragWindows(MoveGames, MoveWinGames);
 
 function DragWindows(header, windows) {
     header.addEventListener('mousedown', () => {
@@ -81,6 +85,7 @@ function DragWinElem(header, elem){
     let WinBodyAwards = document.getElementById('awards_content');
     let WinBodySponsors = document.getElementById('sponsor_content');
     let WinBodySocial = document.getElementById('social_content');
+    let WinBodyGames = document.getElementById('games_content');
     OffDrag(WinBodyAbout);
     OffDrag(WinBodyFAQ);
     OffDrag(WinBodyRules);
@@ -89,6 +94,7 @@ function DragWinElem(header, elem){
     OffDrag(WinBodyAwards);
     OffDrag(WinBodySponsors);
     OffDrag(WinBodySocial);
+    OffDrag(WinBodyGames);
 
     let WinFooterAbout = document.getElementById('about_footer');
     let WinFooterFAQ = document.getElementById('faq_footer');
@@ -97,6 +103,7 @@ function DragWinElem(header, elem){
     let WinFooterAwards = document.getElementById('awards_footer');
     let WinFooterSponosrs = document.getElementById('sponsor_footer');
     let WinFooterSocial = document.getElementById('social_footer');
+    let WinFooterGames = document.getElementById('games_footer');
 
     OffDrag(WinFooterAbout);
     OffDrag(WinFooterFAQ);
@@ -105,6 +112,7 @@ function DragWinElem(header, elem){
     OffDrag(WinFooterAwards);
     OffDrag(WinFooterSponosrs);
     OffDrag(WinFooterSocial);
+    OffDrag(WinFooterGames);
     function OffDrag(win){
         win.onmousedown = function(){
             elem.onmousedown = function(){
@@ -139,6 +147,7 @@ let MoveRegSh = document.getElementById('reg_sh');
 let MoveAwardsSh = document.getElementById('awards_sh');
 let MoveSponsorsSh = document.getElementById('sponsor_sh');
 let MoveSocialSh = document.getElementById('social_sh');
+let MoveGamesSh = document.getElementById('games_sh');
 DragShortcutElem(MoveAboutSh);
 DragShortcutElem(MoveFAQSh);
 DragShortcutElem(MoveRulesSh);
@@ -147,6 +156,7 @@ DragShortcutElem(MoveRegSh);
 DragShortcutElem(MoveAwardsSh);
 DragShortcutElem(MoveSponsorsSh);
 DragShortcutElem(MoveSocialSh);
+DragShortcutElem(MoveGamesSh);
 
 function DragShortcutElem(elem){
     elem.ondragstart = () => false;

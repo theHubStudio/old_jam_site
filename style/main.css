@@ -294,6 +294,8 @@ ul, ol, li {
           font-size: 16px; }
       .header .header_wrapper .menu_panel .windows .win_social {
         display: none; }
+      .header .header_wrapper .menu_panel .windows .win_games {
+        display: none; }
       .header .header_wrapper .menu_panel .windows .win_about_on {
         display: flex;
         border-color: #000 #fff #fff #000; }
@@ -316,6 +318,9 @@ ul, ol, li {
         border-color: #000 #fff #fff #000;
         display: flex; }
       .header .header_wrapper .menu_panel .windows .win_social_on {
+        border-color: #000 #fff #fff #000;
+        display: flex; }
+      .header .header_wrapper .menu_panel .windows .win_games_on {
         border-color: #000 #fff #fff #000;
         display: flex; }
       .header .header_wrapper .menu_panel .windows .win_hide {
@@ -350,7 +355,7 @@ ul, ol, li {
   right: 0;
   left: 0;
   width: 170px;
-  height: 373px;
+  height: 375px;
   border-width: 2px;
   border-style: solid;
   border-color: #fff #000 #000 #fff;
@@ -362,13 +367,13 @@ ul, ol, li {
     justify-content: space-between; }
     .menu_windows .menu_windows_wrapper .name_line {
       width: 35px;
-      height: 363px;
+      height: 370px;
       background-color: #ba0b0b;
       background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
       text-align: start; }
       .menu_windows .menu_windows_wrapper .name_line p {
         transform: rotate(-90deg);
-        margin-top: 165px;
+        margin-top: 196px;
         font-size: 18px;
         font-weight: bolder;
         letter-spacing: 2px;
@@ -633,6 +638,12 @@ ul, ol, li {
   right: 0;
   left: 90px; }
 
+.shortcut_games {
+  top: 210px;
+  bottom: 0;
+  right: 0;
+  left: 90px; }
+
 @media screen and (max-width: 720px) {
   .shortcut_icons {
     width: 80px;
@@ -677,7 +688,19 @@ ul, ol, li {
     top: 457px;
     bottom: 0;
     right: 0;
-    left: 0; } }
+    left: 0; }
+
+  .shortcut_social {
+    top: 88px;
+    bottom: 0;
+    right: 0;
+    left: 90px; }
+
+  .shortcut_games {
+    top: 182px;
+    bottom: 0;
+    right: 0;
+    left: 90px; } }
 .desktop_wins {
   position: fixed;
   top: 130px;
@@ -767,24 +790,24 @@ ul, ol, li {
       display: none; }
     .desktop_wins .win_content .show_date_table_on {
       display: block; }
-  .desktop_wins .win_content_sponsors_social {
+  .desktop_wins .win_content_inner_elems {
     background-color: #f1f1f1;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start; }
-    .desktop_wins .win_content_sponsors_social .win_content_icons {
+    .desktop_wins .win_content_inner_elems .win_content_icons {
       margin: 10px 15px;
       width: 70px;
       height: 70px;
       text-align: center; }
-      .desktop_wins .win_content_sponsors_social .win_content_icons .win_content_links {
+      .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links {
         cursor: pointer;
         color: #105056;
         text-decoration: none; }
-        .desktop_wins .win_content_sponsors_social .win_content_icons .win_content_links .win_content_img {
+        .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links .win_content_img {
           width: 30px;
           height: 30px; }
-        .desktop_wins .win_content_sponsors_social .win_content_icons .win_content_links .win_content_img_main_sponsor {
+        .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links .win_content_img_main_sponsor {
           width: 40px;
           height: 40px; }
   .desktop_wins .win_footer {
@@ -942,6 +965,9 @@ ul, ol, li {
   display: block; }
 
 .desktop_win_social_on {
+  display: block; }
+
+.desktop_win_games_on {
   display: block; }
 
 @media screen and (max-width: 1200px) {

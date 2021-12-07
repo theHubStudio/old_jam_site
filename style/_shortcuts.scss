@@ -72,7 +72,13 @@
     left: 90px;
 
 }
-   
+.shortcut_games{
+    top: 210px;
+    bottom: 0;
+    right: 0;
+    left: 90px;
+
+}
 
 
 @media screen and (max-width: 720px) {
@@ -128,6 +134,21 @@
         right: 0;
         left: 0;
     }
+    .shortcut_social{
+        top: 88px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    
+    }
+    .shortcut_games{
+        top: 182px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    
+    }
+    
           
     
 }
