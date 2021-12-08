@@ -644,8 +644,7 @@ ul, ol, li {
   top: 210px;
   bottom: 0;
   right: 0;
-  left: 90px;
-  display: none; }
+  left: 90px; }
 
 @media screen and (max-width: 720px) {
   .shortcut_icons {
