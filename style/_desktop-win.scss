@@ -54,7 +54,7 @@
     }
     .win_content{
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 13px;
         overflow-y: scroll;
         color: #56d7e4;
         font-family: $inco;
@@ -63,7 +63,7 @@
         border-style: solid;
         background-color: $bk;
         text-align: justify;
-        line-height: 20px;
+        line-height: 18px;
         border-color: $bk $wt $wt $bk;
         width: 466px;
         height: 312px;
@@ -120,7 +120,7 @@
         // justify-content: space-between;
         align-content: flex-start;
         .win_content_icons{
-            margin: 10px 15px;
+            margin: 20px 10px;
             width: 70px;
             height: 70px;
             text-align: center;
