@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/TechFest_logo_01.png" type="image/png">
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/css/animate.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/css/all.css"> -->
+    <title>TECH FEST</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper header__wrapper_mobile-tablet-version">
+                <a href="./index.html"><img src="./assets/images/techfest_neon_logo.png" alt="TECH_FEST_logo" class="header__logo header__logo_size"></a>
+                <p class="header__burger-button header__button">|||</p>
+                <div class="header__overlay animate__animated animate__fadeIn">
+                    <div class="container">
+                        <nav class="header__navigation">
+                            <p class="header__close-button header__button">+</p>
+                            <ul class="header__list">
+                                <li><a href="./index.html" class="header__links">ГЛАВНАЯ</a></li>
+                                <li><a href="./instructions.html" class="header__links">ИНСТРУКЦИЯ</a></li>
+                                <li><a href="./schedule.html" class="header__links">РАСПИСАНИЕ</a></li>
+                                <li><a href="./sections.html" class="header__links">СЕКЦИИ</a></li>
+                                <li><a href="./form.html" class="header__links">РЕГИСТРАЦИЯ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapper header__wrapper_desktop-laptop-version">
+                <a href="./index.html"><img src="./assets/images/techfest_neon_logo.png" alt="TECH_FEST_logo" class="header__logo header__logo_size"></a>
+                <nav class="header__navigation">
+                    <ul class="header__list">
+                        <li><a href="./index.html" class="header__links">ГЛАВНАЯ</a></li>
+                        <li><a href="./instructions.html" class="header__links">ИНСТРУКЦИЯ</a></li>
+                        <li><a href="./schedule.html" class="header__links">РАСПИСАНИЕ</a></li>
+                        <li><a href="./sections.html" class="header__links">СЕКЦИИ</a></li>
+                        <li><a href="./form.html" class="header__links">РЕГИСТРАЦИЯ</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+      
+        
+        </div>
+        
+        
+    </header>
+    <section class="registration">
+        <div class="container">
+            <h1 class="registration__title">Регистрация на участие</h1>
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./additional_pages/page_success.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScQvxtYBZYX-z_sPh_BICnoZJhgb_VZim6gDXg9gNTorc6_tQ/formResponse" method="post" class="form" id="form" name="registration_from" target="hidden_iframe" onsubmit="submitted=true;">
+                <fieldset class="form__fieldset">
+                    <label for="team" class="form__label">Название команды:</label>
+                    <input type="text" name="entry.1381807465" id="team" class="form__item" placeholder="Любое не оскорбительное" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="study_place" class="form__label">Учебное заведение:</label>
+                    <input type="text" name="entry.689161790" id="study_place" class="form__item" placeholder="Несколько учебных заведений в одно поле" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="sections" class="form__label">Веберите секцию:</label>
+                    <select  name="entry.277358756" id="sections" class="form__item" required>
+                        <option value="FI" class="form__options">Financial innovations</option>
+                        <option value="CY" class="form__options">Cybersecurity</option>
+                        <option value="DS" class="form__options">Data science</option>
+                        <option value="DA" class="form__options">Design and Animation</option>
+                        <option value="ST" class="form__options">Space Tech</option>
+                        <option value="RB" class="form__options">Robotics</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="participant1" class="form__label">ФИО капитана:</label>
+                    <input type="text" name="entry.964255080" id="participant1" class="form__item" placeholder="ФИО капитана команды" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="email" class="form__label">Почта капитана:</label>
+                    <input type="email" name="entry.702140556" id="email" class="form__item" placeholder="Почта капитана команды" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="tel" class="form__label">Телефон капитана:</label>
+                    <input type="tel" name="entry.160789097" id="tel" class="form__item" placeholder="телефон капитана" required>
+                </fieldset>
+                <fieldset class="form__fieldset" id="form_elem">
+                    <label for="participant2" class="form__label" id="form_label">ФИО участника №2:</label>
+                    <input type="text"name="entry.1752364032"  id="participant2" class="form__item" placeholder="ФИО участника" required>
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate" >
+                    <label for="participant3" class="form__label" id="form_label">ФИО участника №3:</label>
+                    <input type="text" name="entry.1721330725" id="participant3" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate" >
+                    <label for="participant4" class="form__label" >ФИО участника №4:</label>
+                    <input type="text" name="entry.1823584633" id="participant4" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate">
+                    <label for="participant5" class="form__label">ФИО участника №5:</label>
+                    <input type="text" name="entry.1726591051" id="participant5" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <!-- <p class="form__add-teammate" id="add_form_elem">Добавить участника +</p> -->
+                <input type="submit" value="ОТПРАВИТЬ" class="button form__item form__submit">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+             <div class="footer__social-networks">
+                 <a href="t.me/itech_su"><i class="fa-solid fa-paper-plane footer__icons" title="telegram"></i></a>
+                 <a href="#"><i class="fa-brands fa-youtube footer__icons" title="youtube"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram footer__icons" title="instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter footer__icons" title="twitter"></i></a>
+             </div>
+             
+             <p class="footer__copyright">Все права защищены  © 2022 </p>
+        </div>
+         
+     </footer>
+    
+    <script src="./assets/scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/jquery.js"></script>
+</body>
+</html>
