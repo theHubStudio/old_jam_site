@@ -12,7 +12,7 @@ body {
 	background-repeat: no-repeat;
 	background-color: #769AA6;
 	height: 90vh;
-	overflow: hidden;
+	
 }
 
 body,input,input::placeholder{
