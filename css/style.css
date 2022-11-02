@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Caveat', serif;
+	background: url("../img/bg3.png") no-repeat ; 
+	background-size: cover; 
+	height: 100vh;
+}
+
+.my-container {
+	display: block;
+	width: 100%;
+	height: 100vh;
+}
+
+.papirus {
+	background: url("../img/diplomav1.png") no-repeat center; 
+	background-size: 83vh;
+	width: 80vh;
+	margin: 0 auto;
+}
+
+.box {
+	padding: 18vh 10vh 0 10vh;
+	height: 60vh;
+}
+
+.title {
+	text-align: center;
+}
+
+.form-group {
+	/*padding: .5vh;*/
+}
+
+.title {
+	text-align: center;
+}
+
+input {
+	border-top: 0 !important; 
+	border-bottom: 1px solid #808080 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-radius: 1px !important;
+	background: 0 !important;
+	font-size: 8vh;
+	height: 5vh;
+}
+
+input:after {
+	background: 0 !important;
+}
+	
+
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none !important;
+}
+
+.button {
+	margin-top: 3vh;
+}
+
+.back {
+	padding-top: 25vh;
+	text-align: center;
+}
+
+a {
+	text-align: center;
+	text-decoration: none;
+	padding: 10vh;
+}
