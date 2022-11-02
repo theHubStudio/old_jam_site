@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mythical GameJam</title>
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container d-block h-100 my-container">
-		<div class="papirus h-100">
-			<div class="box">
-				<div class="row">
-					<h2 class="title">Регистрация на Mythical Game Jam SU</h2>
-				</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mythical GameJam</title>
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container venus">
+			<div class="form-wrapper">
+				<h2 class="title">Mythical Game Jam SU</h2>
 				<div class="row">
 					<script type="text/javascript">var submitted=false;</script>
-    				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
 					<form 
 						method="POST" 
 						action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdxBG_we1ZXQ0yBwIs14s3CoAEgNkON1tx0ZpWmU20BjDmLkQ/formResponse?chromeless=true"
 						id="my-form"
 						target="hidden_iframe" onsubmit="submitted=true;">
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Данные команды</label>
-					    <input name="entry.622377088" type="text" class="form-control" placeholder="Название Команды*" required style="">
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1842236906" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Электронная почта*" required>
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1419582377" type="number" class="form-control" placeholder="Контактный Номер Телефона*" required>
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1601897725" type="text" class="form-control" placeholder="Ф.И.О. 1го участника*" required>
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1688673403" type="text" class="form-control" placeholder="Ф.И.О. 2го участника*" required>
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1712183872" type="text" class="form-control" placeholder="Ф.И.О. 3го участника">
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.752129752" type="text" class="form-control" placeholder="Ф.И.О. 4го участника">
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.1555555961" type="text" class="form-control" placeholder="Ф.И.О. 5го участника">
-					  </div>
-					  <div class="form-group">
-					    <input name="entry.966331574" type="text" class="form-control" placeholder="Учебное заведение*" required>
-					  </div>
-					  <button type="submit" class="btn btn-dark button">Зарегестрироваться</button>
+					<div class="form-group">
+						<input name="entry.622377088" type="text" class="form-control" placeholder="название команды" required style="">
+					</div>
+					<div class="form-group">
+						<input name="entry.1842236906" type="email" class="form-control" aria-describedby="emailHelp" placeholder="электронная почта" required>
+					</div>
+					<div class="form-group">
+						<input name="entry.1419582377" type="number" class="form-control" placeholder="номер телефона" required>
+					</div>
+					<div class="form-group">
+						<input name="entry.1601897725" type="text" class="form-control" placeholder="капитана" required>
+					</div>
+					<div class="form-group">
+						<input name="entry.1688673403" type="text" class="form-control" placeholder="участник" required>
+					</div>
+					<div class="form-group">
+						<input name="entry.1712183872" type="text" class="form-control" placeholder="участник">
+					</div>
+					<div class="form-group">
+						<input name="entry.752129752" type="text" class="form-control" placeholder="участник">
+					</div>
+					<div class="form-group">
+						<input name="entry.1555555961" type="text" class="form-control" placeholder="участник">
+					</div>
+					<div class="form-group">
+						<input name="entry.966331574" type="text" class="form-control" placeholder="учебное заведение" required>
+					</div>
+					<button type="submit" class="btn btn-outline-light button-submit">Регистрация</button>
 					</form>
 				</div>
 			</div>
+			<!-- <div class="angels">
+				<img src="./img/angel1.png" alt="angel" class="angel">
+				<img src="./img/angel4.png" alt="angel" class="angel">
+				<img src="./img/angel5.png" alt="angel" class="angel">
+			</div> -->
+			
 		</div>
-	</div>	
-</body>
+		
+		<script type="text/javascript" src="./js/vanill_tilt.js"></script>
+		<script src="./js/index.js"></script>
+
+	</body>
+
 </html>

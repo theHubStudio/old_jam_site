@@ -13,3 +13,11 @@ window.addEventListener("load", function() {
     })
   });
 });
+
+VanillaTilt.init(document.querySelector(".angel"), {
+  max: 25,
+  speed: 400
+});
+
+
+VanillaTilt.init(document.querySelectorAll(".angel"));

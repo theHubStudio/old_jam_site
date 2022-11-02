@@ -1,74 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
-@media(max-width: 500px) {
-
-.papirus {
-	background: url("../img/diplomav1.png") no-repeat top center; 
-	background-size: 83vh;
-	width: 80vw;
-	margin: 0 auto;
-}
-
-.box {
-	padding: 18vh 2vw 0 2vw;
-	height: 60vh;
-}
-
-
-}
 body {
-	font-family: 'Caveat', serif;
-	background: url("../img/bg3.png") no-repeat ; 
-	background-size: cover; 
-	height: 100vh;
-
-}
-@media(min-width: 500px) {
-
-
-
-
-.papirus {
-	background: url("../img/diplomav1.png") no-repeat top center; 
-	background-size: 83vh;
-	width: 80vh;
-	margin: 0 auto;
+	font-family: 'Red Hat Mono', monospace;
+	background-image: url('../img/loader-texture.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #769AA6;
+	height: 90vh;
+	overflow: hidden;
 }
 
-.box {
-	padding: 18vh 10vh 0 10vh;
-	height: 60vh;
+body,input,input::placeholder{
+	color: #fff !important;
 }
 
+input::placeholder{
+	font-size: 14px;
 }
-
-
-.my-container {
-	display: block;
-	width: 100%;
-	height: 100vh;
-}
-
-
-
-
-
-.title {
-	text-align: center;
-}
-
-.form-group {
-	/*padding: .5vh;*/
-}
-
-.title {
-	text-align: center;
-}
-
 input {
 	border-top: 0 !important; 
 	border-bottom: 1px solid #808080 !important;
@@ -76,15 +29,13 @@ input {
 	border-right: 0 !important;
 	border-radius: 1px !important;
 	background: 0 !important;
-	font-size: 8vh;
-	height: 5vh;
+	margin: 8px 0;
+	
 }
 
 input:after {
 	background: 0 !important;
 }
-	
-
 
 input:focus,
 textarea:focus,
@@ -92,17 +43,41 @@ select:focus {
 	outline: none !important;
 }
 
-.button {
-	margin-top: 3vh;
+.form-wrapper{
+	margin: 80px auto 0 auto;
+
+}
+.title{
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+}
+.button-submit{
+    margin-top: 20px;
+	padding: 10px;
+
 }
 
-.back {
-	padding-top: 25vh;
-	text-align: center;
+.angel{
+	position: absolute;
 }
+/* .angel:nth-child(1){
+	top: 25px;
+	right: 0px;
+}
+.angel:nth-child(2){
+	bottom: 25px;
+	right: 0px;
+}
+.angel:nth-child(3){
+	bottom: 25px;
+	left: 80px;
+} */
+@media (min-width: 768px) {
 
-a {
-	text-align: center;
-	text-decoration: none;
-	padding: 10vh;
+	.form-wrapper{
+		width: 500px;
+	}
+	
 }
