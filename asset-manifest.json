@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/gamejam/static/css/main.68eac482.css",
-    "main.js": "/gamejam/static/js/main.49bec9ca.js",
-    "static/media/amaterasu-png.png": "/gamejam/static/media/amaterasu-png.b7cc5f75a2a60db92a74.png",
-    "static/media/papirus.png": "/gamejam/static/media/papirus.f6cbc0cd79344de6fbce.png",
-    "static/media/cloud.webp": "/gamejam/static/media/cloud.6504f963b8008b0e8198.webp",
-    "static/media/loader-texture.webp": "/gamejam/static/media/loader-texture.510a72d1458250ff8a03.webp",
-    "static/media/kempir.gif": "/gamejam/static/media/kempir.352ac358fd5b4765a1c7.gif",
-    "static/media/dedal.png": "/gamejam/static/media/dedal.c49850c81fb2bd462147.png",
-    "static/media/venus1.gif": "/gamejam/static/media/venus1.d89dee15d18eff64857b.gif",
-    "static/media/scroll2.png": "/gamejam/static/media/scroll2.310731c6188f683ce801.png",
-    "static/media/scroll3.png": "/gamejam/static/media/scroll3.986eacd52ee3b31e5e79.png",
-    "static/media/scroll1.png": "/gamejam/static/media/scroll1.54f40800f6215bcae90b.png",
-    "static/media/icarus.png": "/gamejam/static/media/icarus.5ff51413082e53152d95.png",
-    "static/media/angel2.png": "/gamejam/static/media/angel2.0b80ae5513b06911cb24.png",
-    "static/media/angel1.png": "/gamejam/static/media/angel1.1635b7133ff7ed219c7d.png",
-    "static/media/angel3.png": "/gamejam/static/media/angel3.104f38b93695503ddfa4.png",
-    "index.html": "/gamejam/index.html",
-    "main.68eac482.css.map": "/gamejam/static/css/main.68eac482.css.map",
-    "main.49bec9ca.js.map": "/gamejam/static/js/main.49bec9ca.js.map"
+    "main.css": "/static/css/main.c19ed341.css",
+    "main.js": "/static/js/main.ed8cc33e.js",
+    "static/media/amaterasu-png.png": "/static/media/amaterasu-png.b7cc5f75a2a60db92a74.png",
+    "static/media/papirus.png": "/static/media/papirus.f6cbc0cd79344de6fbce.png",
+    "static/media/cloud.webp": "/static/media/cloud.6504f963b8008b0e8198.webp",
+    "static/media/loader-texture.webp": "/static/media/loader-texture.510a72d1458250ff8a03.webp",
+    "static/media/kempir.gif": "/static/media/kempir.352ac358fd5b4765a1c7.gif",
+    "static/media/dedal.png": "/static/media/dedal.c49850c81fb2bd462147.png",
+    "static/media/venus1.gif": "/static/media/venus1.d89dee15d18eff64857b.gif",
+    "static/media/scroll2.png": "/static/media/scroll2.310731c6188f683ce801.png",
+    "static/media/scroll3.png": "/static/media/scroll3.986eacd52ee3b31e5e79.png",
+    "static/media/scroll1.png": "/static/media/scroll1.54f40800f6215bcae90b.png",
+    "static/media/icarus.png": "/static/media/icarus.5ff51413082e53152d95.png",
+    "static/media/angel2.png": "/static/media/angel2.0b80ae5513b06911cb24.png",
+    "static/media/angel1.png": "/static/media/angel1.1635b7133ff7ed219c7d.png",
+    "static/media/angel3.png": "/static/media/angel3.104f38b93695503ddfa4.png",
+    "index.html": "/index.html",
+    "main.c19ed341.css.map": "/static/css/main.c19ed341.css.map",
+    "main.ed8cc33e.js.map": "/static/js/main.ed8cc33e.js.map"
   },
   "entrypoints": [
-    "static/css/main.68eac482.css",
-    "static/js/main.49bec9ca.js"
+    "static/css/main.c19ed341.css",
+    "static/js/main.ed8cc33e.js"
   ]
 }
