@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/theHubStudio.github.io/static/css/main.ceb41613.css",
+    "main.js": "/theHubStudio.github.io/static/js/main.471fa241.js",
+    "static/media/amaterasu-png.png": "/theHubStudio.github.io/static/media/amaterasu-png.b7cc5f75a2a60db92a74.png",
+    "static/media/papirus.png": "/theHubStudio.github.io/static/media/papirus.f6cbc0cd79344de6fbce.png",
+    "static/media/cloud.webp": "/theHubStudio.github.io/static/media/cloud.6504f963b8008b0e8198.webp",
+    "static/media/loader-texture.webp": "/theHubStudio.github.io/static/media/loader-texture.510a72d1458250ff8a03.webp",
+    "static/media/kempir.gif": "/theHubStudio.github.io/static/media/kempir.352ac358fd5b4765a1c7.gif",
+    "static/media/dedal.png": "/theHubStudio.github.io/static/media/dedal.c49850c81fb2bd462147.png",
+    "static/media/venus1.gif": "/theHubStudio.github.io/static/media/venus1.d89dee15d18eff64857b.gif",
+    "static/media/scroll2.png": "/theHubStudio.github.io/static/media/scroll2.310731c6188f683ce801.png",
+    "static/media/scroll3.png": "/theHubStudio.github.io/static/media/scroll3.986eacd52ee3b31e5e79.png",
+    "static/media/scroll1.png": "/theHubStudio.github.io/static/media/scroll1.54f40800f6215bcae90b.png",
+    "static/media/icarus.png": "/theHubStudio.github.io/static/media/icarus.5ff51413082e53152d95.png",
+    "static/media/angel2.png": "/theHubStudio.github.io/static/media/angel2.0b80ae5513b06911cb24.png",
+    "static/media/angel1.png": "/theHubStudio.github.io/static/media/angel1.1635b7133ff7ed219c7d.png",
+    "static/media/angel3.png": "/theHubStudio.github.io/static/media/angel3.104f38b93695503ddfa4.png",
+    "index.html": "/theHubStudio.github.io/index.html",
+    "main.ceb41613.css.map": "/theHubStudio.github.io/static/css/main.ceb41613.css.map",
+    "main.471fa241.js.map": "/theHubStudio.github.io/static/js/main.471fa241.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ceb41613.css",
+    "static/js/main.471fa241.js"
+  ]
+}
