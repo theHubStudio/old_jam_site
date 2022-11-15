@@ -1,0 +1,17 @@
+.about{
+    background:#6997a1;
+}
+.about-content{
+    letter-spacing: 2px;
+}
+
+  
+.papirus{
+    margin: 0 auto 40px;
+    display: block;
+    width: 100%;
+    transition: linear .4s;
+    filter: drop-shadow(-14px 11px 38px rgba(0, 0, 0, 0.3));
+    cursor: pointer;
+}
+

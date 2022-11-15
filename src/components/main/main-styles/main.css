@@ -1,0 +1,42 @@
+.main{
+    background:#94ADB2;
+    padding: 0;
+}
+
+.main_content{
+    margin-top: 16vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;   
+}
+.main_subtitle{
+    font-size: 12px;
+}
+.main_title{
+    font-size: 15vw;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.main_reg-btn{
+    background-color:#96B1AE;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 36px;
+    padding: 18px 6px;
+    transition: .6s;
+}
+.main_reg-btn:hover{
+    color: #fff;
+    background-color:#8fa8a5;
+}
+.venus{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50vh;
+}
+.angels{
+   display: none;
+}
+

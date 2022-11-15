@@ -1,0 +1,67 @@
+@media (min-width: 576px) {
+
+    .main_subtitle{
+        font-size: 16px;
+    }
+    .main_title{
+        font-size: 80px;
+    }
+    .main_reg-btn{
+        font-size: 22px;
+        margin-top: 36px;
+       
+        padding: 24px 6px;
+    }
+
+    
+}
+@media (min-width: 992px) {
+    .main-wrapper{
+        
+        display: flex;
+        align-items: center;
+    }
+    .main_content{
+        margin-top: 0;
+        margin-left: 90px;
+    }
+   
+    .main_reg-btn{
+        width: 340px;
+    }
+
+    .venus{
+        height: 90vh;
+    }
+    .angels{
+        display: block;
+    }
+    .angel{
+        position: absolute;
+        width: 116px;
+    }
+    .angel:nth-child(1){
+        bottom: 2vw;
+        left: 8vw;
+    }
+    .angel:nth-child(2){
+        bottom: 5vw;
+        left: 50vw;
+    }
+    .angel:nth-child(3){
+        top: 3vw;
+        left: 7vw;
+    }
+}
+@media (min-width: 1200px) {
+    .angel{
+      
+        width: 140px;
+    }
+    .angel:nth-child(2){
+        bottom: 8vw;
+        left: 40vw;
+    }
+   
+   
+}
