@@ -1,7 +1,7 @@
 {
   "name": "gamejam-app",
   "version": "0.1.0",
-  "homepage": "https://theHubStudio.github.io/theHubStudio.github.io",
+  "homepage": "https://theHubStudio.github.io/",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.29",
